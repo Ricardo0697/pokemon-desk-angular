@@ -1,0 +1,65 @@
+.card1 {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .container {
+    position: relative;
+  }
+  
+  .card2 {
+    background-color: #00693C;
+    height: 600px;
+    width: 392px;
+    position: absolute;
+    left: 600px;
+    top: 295px;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .card2 .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card2 h5.card-title {
+    margin-bottom: 20px;
+  }
+  
+  .card2 input[type="file"] {
+    background-color: #00693C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .card1 .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .card1 label {
+    font-weight: bold;
+  }
+  
+  .card1 input[type="text"],
+  .card1 input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .card1 button[type="submit"] {
+    background-color: #00693C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

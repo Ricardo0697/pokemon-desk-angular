@@ -1,1 +1,18 @@
-<p>pokemon-list works!</p>
+<h1>Lista de Pokémons</h1>
+<div>
+    <input type="text" [(ngModel)]="pokemonName" placeholder="Nombre del Pokémon">
+    <button (click)="getPokemon()">Buscar</button>
+  </div>
+  
+  <div *ngIf="loading">
+    Loading...
+  </div>
+  
+  <div *ngFor="let pokemon of pokemon">
+    <img [src]="pokemon.imageUrl" [alt]="pokemon.name">
+    <p>{{ pokemon.name }}</p>
+  </div>
+  
+  <div *ngIf="error">
+    An error occurred: {{ error }}
+  </div>
